@@ -1,0 +1,54 @@
+{
+  "target_size": [
+    32,
+    32
+  ],
+  "training_size": [
+    32,
+    32
+  ],
+  "kernels": [
+    {
+      "name": "Laplacian",
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -4,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "description": "Detecta \u00e1reas de cambio r\u00e1pido (bordes) en todas direcciones. Resalta detalles finos."
+    },
+    {
+      "name": "Edge Detection",
+      "matrix": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          8,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "description": "Detecta bordes en todas las direcciones. Resalta las transiciones bruscas de intensidad."
+    }
+  ]
+}

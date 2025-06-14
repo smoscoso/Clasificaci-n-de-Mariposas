@@ -1,0 +1,75 @@
+{
+  "target_size": [
+    32,
+    32
+  ],
+  "training_size": [
+    32,
+    32
+  ],
+  "kernels": [
+    {
+      "name": "Edge Detection",
+      "matrix": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          8,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "description": "Detecta bordes en todas las direcciones. Resalta las transiciones bruscas de intensidad."
+    },
+    {
+      "name": "Sobel X",
+      "matrix": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          -2,
+          0,
+          2
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "description": "Detecta bordes horizontales. \u00datil para identificar caracter\u00edsticas horizontales."
+    },
+    {
+      "name": "Sobel Y",
+      "matrix": [
+        [
+          -1,
+          -2,
+          -1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "description": "Detecta bordes verticales. \u00datil para identificar caracter\u00edsticas verticales."
+    }
+  ]
+}
